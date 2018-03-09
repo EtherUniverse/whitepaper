@@ -118,7 +118,7 @@ Ether Universe will provide a series of easy-using client apps. They will suppor
 
 ### Proof of Completion
 
-Ether Universe supports communications across blockchains. A unique ID will be assigned to each transaction, which will be verified by miners. With the unique ID, users can identify a particular transaction and verify that a list of given transaction are processed in the expected order.
+Ether Universe supports communications across blockchains. A unique ID will be assigned to each transaction, which will be verified by miners. With the unique ID, users can identify a particular transaction and verify that a list of given transactions are processed in the expected order.
 
 ## Conclusion
 
