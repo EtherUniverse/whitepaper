@@ -8,6 +8,8 @@ February 27, 2018
 
 ## Background
 
+Since Bitcoin was introduced in 2008, blockchain technology has received great development. Entrepreneurs and developers have engaged in researching and promoting the technology, in order to offer even broader applications. Later, as Ethereum came into existence, smart contracts have greatly leveraged the applicability of blockchain technology. Recently, EOS with DPOS is able to provide millions of users with low-latency transactions. In future, thousands of blockchains will emerge in various industries. Should a user want to access features provided by a blockchain, the user would have to purchase tokens of the blockchain; this would greatly limit the use of blockchain technology.
+
 Nowadays, several teams have engaged in developing cross-chain solutions, e.g. BTCRelay, BlockStream, Lisk, and Asch. They all presented excellent technical progression and have gained tremendous influence.
 
 EOS represents the right direction of the evolution of blockchain technology, based on its philosophy of general validation, progressive iteration, and long-term evolution. The purpose of EOS is to offer million-scale high-volume capacity, accounts system, free use, easy upgrade, restoration from bugs, low-latency, and combination of high performance in both serial and parallel computations. Ether Universe will inherit the essential features of EOS and will construct a distinct cross-chain platform, eventually enabling the exchange of value across blockchains.
@@ -25,6 +27,8 @@ Ether Universe intends to enable the exchange of value across non-specific block
 #### Participants
 
 Logic subchains delegates the supervision power of tokens to the miners on the platform, allowing the miners to vote to determine where to send the unlocked tokens. Miners do voting with certain fields on the blockchain. The more workers engage in the voting, the more secure the system is.
+
+Ether Universe employs a mechanism of Witness and Guarantor. As long as only a few miners will engage the verification, the system would risk being compromised if it solely relies on miners' verification. Witnesses and guarantors will vote jointly to determine the token unlocking. Different witnesses have different voting weights; the weights of the miners will be adjusted dynamically according to the change of miners and guarantors. Guarantors are participants who possess potent power; they delegate deposits to witnesses and elect witnesses to vote on their behalves. As the systems grows, the witnesses' overall weight will decline. Ether Universe will retain witnesses in favor of system stability.
 
 #### Reward/Punishment Mechanism
 
@@ -94,11 +98,15 @@ On different blockchains, the number of logic subchain cores may differ. Ether U
 
 ### Miner verification
 
+We don't want to oblige all miners to do voting verification. Although it is a safer option, the system latency would be overwhelmingly unacceptable. Hence, Ether Universe Logic Subchain Core may randomly select a portion of the miners to vote based on the participants on the basechain. The amount is dynamic. When miners are few, the system will try to select all miners; when miners are many, only selected few may vote. All miners are marked with credibility, which is associated with pseudo-random seeds. We can then make sure that miners with extremely low credibility will never get selected to vote, in favor of system security.
+
 ### Logic Subchain Interface
 
 Matching the extended APIs of ETUChain, all logic subchains are guaranteed to have consistent APIs. At the beginning, we will need locking, miner information confirmation, unlocking, etc.
 
 ## Accounts
+
+Ether Universe includes a complete accounts system. As mentioned above, Ether Universe is a platform based on EOS, hence it inherits the user-friendly features of EOS. In addition, Ether Universe is a communication platform over various blockchains; one account is enough to associate with other accounts in other blockchains, enabling the sharing of information and the exchange of value.
 
 ### Account Link
 
