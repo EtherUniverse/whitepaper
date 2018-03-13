@@ -16,6 +16,8 @@ EOS represents the right direction of the evolution of blockchain technology, ba
 
 ## Inter Blockchain Communication
 
+At present, three major methods are employed in cross-chain solutions — notary scheme, sidechain/relay, and hash-locking. Ether Universe will select the sidechain method in supplement to logic subchain.
+
 ![pic1](pic/Inter-Blockchain-Communication.png)
 
 In the BTCRelay solution, events (e.g. generation of blocks and transactions) in the basechain are validated with SPV Proofs by sidechains. As sidechains are anchored on Bitcoin, users are allowed to verify Bitcoin transactions over Ethereum with smart contracts. This was the first effective attempt and it was truly ambitious.
@@ -35,6 +37,8 @@ Ether Universe employs a mechanism of Witness and Guarantor. As long as only a f
 Ether Universe employs a reward-punishment mechanism, in which all who engage in verification shall have their rewards according to the rules. Vice versa, the system will punish the witnesses and the miners who fail to fulfill their responsibilities. The system will first decrease their credibility. One's credibility will directly affect the weights and rewards of the participant. If a witness makes too many false statements (e.g. providing invalid block proofs), the system will confiscate its deposit.
 
 ### Communicate With EOS
+
+Ether Universe basechain can communicate with EOS basechain directly. This is done by the simplification of generating existence-proofs and chronicle-proofs of messages. The proofs are incorporated with application structures — concealing the application developer's identity when doing cross-chain communications regarding message details and validation.
 
 ## ETUChain
 
